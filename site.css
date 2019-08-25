@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 100%;
+  padding: 5px;
+}
+
+.menu {
+  position: fixed;
+  background-color: #c35327;
+  width: 100%;
+}
+
+.menu a {
+  color: white;
+  font-family: 'Aleo Light', arial;
+  text-decoration: none;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="email"],
+input[type="text"],
+select,
+textarea {
+  font-size: 100%;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  font-size: 100%;
+  background-color: #d7aa3f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #d7aa3f;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #dfddde;
+  padding: 20px;
+}
+
+.container label {
+  font-family: 'Aleo Light', arial;
+}
+
+.container h3 {
+  font-family: 'Aleo Light', arial;
+}
+
+.container textarea {
+  resize: none;
+}
+
+.footer p {
+  font-family: 'Aleo Light', arial;
+  text-align: right;
+}
+
+.institucional {
+  font-family: 'Aleo Light', arial;
+}
+
+.institucional p {
+  text-align: justify;
+  text-justify: inter-word;
+}

@@ -87,3 +87,8 @@ input[type="submit"]:hover {
   text-align: justify;
   text-justify: inter-word;
 }
+
+#map {
+  height: 200px;
+  width: 80%;
+}

@@ -31,7 +31,7 @@ $(document).ready(function() {
     });
 });
 
-// Google Maps 
+// Google Maps
 function initMap() {
     var acfLatLong = {
         lat: -3.869016,

@@ -19,7 +19,7 @@ html {
 
 .menu a {
   color: white;
-  font-family: 'Aleo Light', arial;
+  font-family: 'Aleo', serif;
   text-decoration: none;
 }
 
@@ -63,11 +63,11 @@ input[type="submit"]:hover {
 }
 
 .container label {
-  font-family: 'Aleo Light', arial;
+  font-family: 'Aleo', serif;
 }
 
 .container h3 {
-  font-family: 'Aleo Light', arial;
+  font-family: 'Aleo', serif;
 }
 
 .container textarea {
@@ -75,12 +75,12 @@ input[type="submit"]:hover {
 }
 
 .footer p {
-  font-family: 'Aleo Light', arial;
+  font-family: 'Aleo', serif;
   text-align: right;
 }
 
 .institucional {
-  font-family: 'Aleo Light', arial;
+  font-family: 'Aleo', serif;
 }
 
 .institucional p {

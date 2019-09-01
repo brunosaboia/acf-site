@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="site.css" />
-  <link href="https://allfont.net/allfont.css?fonts=aleo-light" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Aleo&display=swap" rel="stylesheet">
   <link rel="icon" href="/imgs/favicon.png" />
   <title>ACF - Website</title>
   <meta name="description" content="ACF Indústria de Artefatos Metálicos" />
@@ -25,13 +25,16 @@
     content="Seja bem-vindo ao site da ACF Indústria de Artefatos Metálicos. Aqui, você pode descobrir mais informações sobre a empresa." />
   <meta property="twitter:image" content="/imgs/logo.png" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <!-- jQuery Modal -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
   <!-- Google Maps -->
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvfyyFyTQ99VzworFbZ0erKkqhTwRGI54&callback=initMap&language=pt&region=BR">
     </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91416150-3"></script>
   <script>
@@ -41,6 +44,8 @@
 
     gtag('config', 'UA-91416150-3');
   </script>
+  <!-- Recaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR" async defer></script>
 
   <!-- Custom JS -->
   <script src="site.js"></script>
@@ -49,6 +54,7 @@
 <body>
   <div class="row menu">
     <div class="column">
+      &nbsp;
       <a href="#inicio">Início</a>
       &nbsp;
       <a href="#quem-somos">Quem Somos</a>
@@ -150,8 +156,8 @@
           <label for="contact-message">Mensagem</label>
           <textarea id="contact-message" name="contact-message" placeholder="Sua mensagem"
             style="width: 100%; height: 150px"></textarea>
-
-          <input type="submit" value="Enviar" />
+          <div class="g-recaptcha" data-sitekey="6LepDrYUAAAAAOE9LKXARng-Mz2YDEw4fJ4KJu8d"></div>
+          <input style="margin-top: 1%;" type="submit" value="Enviar" />
         </form>
       </div>
     </div>

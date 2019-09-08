@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="site.css" />
-  <link href="https://fonts.googleapis.com/css?family=Aleo&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Aleo&display=swap" rel="stylesheet">
   <link rel="icon" href="/imgs/favicon.png" />
   <title>ACF - Website</title>
   <meta name="description" content="ACF Indústria de Artefatos Metálicos" />
@@ -24,7 +24,9 @@
   <meta property="twitter:description"
     content="Seja bem-vindo ao site da ACF Indústria de Artefatos Metálicos. Aqui, você pode descobrir mais informações sobre a empresa." />
   <meta property="twitter:image" content="/imgs/logo.png" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- JQuery-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- jQuery Modal -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
@@ -32,11 +34,11 @@
 
   <!-- Google Maps -->
   <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvfyyFyTQ99VzworFbZ0erKkqhTwRGI54&callback=initMap&language=pt&region=BR">
+    src="//maps.googleapis.com/maps/api/js?key=AIzaSyCvfyyFyTQ99VzworFbZ0erKkqhTwRGI54&callback=initMap&language=pt&region=BR">
     </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91416150-3"></script>
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-91416150-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -45,10 +47,14 @@
     gtag('config', 'UA-91416150-3');
   </script>
   <!-- Recaptcha -->
-  <script src="https://www.google.com/recaptcha/api.js?hl=pt-BR" async defer></script>
+  <script src="//www.google.com/recaptcha/api.js?hl=pt-BR" async defer></script>
 
   <!-- Custom JS -->
   <script src="site.js"></script>
+
+  <!-- Portfolio -->
+  <link rel="stylesheet" href="/styles/slideshow.css" />
+
 </head>
 
 <body>
@@ -66,6 +72,8 @@
       <a href="#rastreabilidade">Rastreabilidade</a>
       &nbsp;
       <a href="#produtos">Produtos</a>
+      &nbsp;
+      <a href="#portfolio">Portfólio</a>
       &nbsp;
       <a href="#nossa-equipe">Nossa Equipe</a>
       &nbsp;
@@ -140,8 +148,91 @@
         <ul>
     </p>
   </div>
+  <div id="portfolio" class="modal">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 8</div>
+        <img src="/imgs/products/1.jpeg" style="width:100%">
+        <div class="text">Condensador Helicoidal</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="/imgs/products/2.jpeg" style="width:100%">
+        <div class="text">Condensador Helicoidal</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="/imgs/products/3.jpeg" style="width:100%">
+        <div class="text">Unidade Pré-Condensadora</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="/imgs/products/4.jpeg" style="width:100%">
+        <div class="text">Evaporador para Purificadores</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="/imgs/products/5.jpeg" style="width:100%">
+        <div class="text">Evaporador para Bebedouros</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="/imgs/products/6.jpeg" style="width:100%">
+        <div class="text">Linha de Sucção</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="/imgs/products/7.jpeg" style="width:100%">
+        <div class="text">Linha de Sucção</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="/imgs/products/8.jpeg" style="width:100%">
+        <div class="text">Tubos de Ligação para Fogão</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
   </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  </div>
+  </div>
+  <script src="/scripts/slideshow.js"></script>
   <div class="row">
     <div class="column" id="contato">
       <div class="container">

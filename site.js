@@ -12,6 +12,12 @@ $(document).ready(function () {
             fadeDuration: 250
         });
     });
+    $('a[href="#videos"]').click(function (event) {
+        event.preventDefault();
+        $(this).modal({
+            fadeDuration: 250
+        });
+    });
     // Add smooth scrolling to all links
     $("a").on("click", function (event) {
         // Make sure this.hash has a value before overriding default behavior
